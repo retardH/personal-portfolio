@@ -1,7 +1,13 @@
-import React, { PropsWithChildren } from 'react';
+"use client";
+import { ActiveSectionProvider } from "@/contexts/active-section";
+import React, { PropsWithChildren } from "react";
 
 const Providers: React.FC<PropsWithChildren> = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <>
+      <ActiveSectionProvider>{children}</ActiveSectionProvider>
+    </>
+  );
 };
 
 export default Providers;

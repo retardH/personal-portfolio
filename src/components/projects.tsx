@@ -1,21 +1,17 @@
 import React from "react";
 import SectionHeader from "./section-header";
-import { ProjectType } from "@/lib/types";
 import { projectsData } from "@/lib/data";
+import Project from "./project";
 
 const MyProjects = () => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-32">
       <SectionHeader>My Projects</SectionHeader>
       {projectsData.map((project) => (
         <Project key={project.title} {...project} />
       ))}
     </section>
   );
-};
-
-const Project: React.FC<ProjectType> = (project) => {
-  return <div>Project</div>;
 };
 
 export default MyProjects;
