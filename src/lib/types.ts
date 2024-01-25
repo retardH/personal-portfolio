@@ -6,3 +6,6 @@ export type ProjectType = {
   repoLink: string;
   siteLink: string;
 };
+
+
+export type SectionName = "Home" | "About" | "Projects" | "History" | "Skills" | "Contact";

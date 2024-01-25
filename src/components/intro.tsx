@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const IntroSection = () => {
   return (
-    <section className="mt-[10rem] max-w-[50rem]">
+    <section id="home" className="mt-[10rem] max-w-[50rem] scroll-mt-[100rem]">
       <div className="flex flex-col items-center justify-center">
         <motion.figure
           className="relative h-[80px] w-[80px]"
@@ -44,7 +44,7 @@ const IntroSection = () => {
           </motion.span>
         </motion.figure>
         <motion.h1
-          className="mb-10 mt-4 text-center text-2xl !leading-[3rem] sm:text-4xl"
+          className="mb-10 mt-4 text-center text-2xl sm:text-4xl sm:!leading-[3rem]"
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
