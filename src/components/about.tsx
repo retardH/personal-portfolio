@@ -2,8 +2,10 @@
 import React from "react";
 import SectionHeader from "./section-header";
 import { motion } from "framer-motion";
+import { useSectionView } from "@/lib/hooks";
 
 const AboutMyself = () => {
+  const { ref } = useSectionView("About");
   return (
     <motion.section
       id="about"
@@ -11,6 +13,7 @@ const AboutMyself = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      ref={ref}
     >
       <SectionHeader>About Myself</SectionHeader>
       <p className="mb-3 text-justify text-base !leading-7 sm:text-center sm:!leading-8">
