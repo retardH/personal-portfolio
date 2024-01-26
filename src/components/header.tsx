@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils";
 import { useActiveSectionContext } from "@/contexts/active-section";
 
 const Header = () => {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   return (
     <header className="relative z-[999]">
       <motion.div
@@ -30,13 +31,16 @@ const Header = () => {
                   { "text-gray-950": activeSection === link.name },
                 )}
                 href={link.hash}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setTimeOfLastClick(Date.now());
+                  setActiveSection(link.name);
+                }}
               >
                 {link.name}
               </Link>
               {link.name === activeSection && (
                 <motion.span
-                  className="borderBlack absolute inset-0 -z-10 rounded-full bg-gray-100"
+                  className="absolute inset-0 -z-10 rounded-full bg-gray-200"
                   layoutId="activeSection"
                   transition={{
                     damping: 30,

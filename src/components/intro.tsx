@@ -7,10 +7,16 @@ import { HiDownload } from "react-icons/hi";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
 
 import Link from "next/link";
+import { useSectionView } from "@/lib/hooks";
 
 const IntroSection = () => {
+  const { ref } = useSectionView("Home");
   return (
-    <section id="home" className="mt-[10rem] max-w-[50rem] scroll-mt-[100rem]">
+    <section
+      id="home"
+      ref={ref}
+      className="max-w-[50rem] scroll-mt-[100rem]"
+    >
       <div className="flex flex-col items-center justify-center">
         <motion.figure
           className="relative h-[80px] w-[80px]"
