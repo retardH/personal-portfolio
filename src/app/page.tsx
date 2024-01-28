@@ -1,4 +1,5 @@
 import AboutMyself from '@/components/about';
+import Contact from '@/components/contact';
 import MyHistory from '@/components/history';
 import IntroSection from '@/components/intro';
 import MyProjects from '@/components/projects';
@@ -17,6 +18,8 @@ export default function Home() {
       <MySkills />
       <SectionDivider />
       <MyHistory />
+      <SectionDivider />
+      <Contact />
     </div>
   );
 }
