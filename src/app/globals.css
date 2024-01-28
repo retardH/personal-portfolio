@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --line-color: '#e5e7eb',
+}
+
+
+.vertical-timeline::before {
+  background-color: #e5e7eb !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
