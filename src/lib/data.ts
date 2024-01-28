@@ -33,7 +33,7 @@ export const links = [
 export const experiencesData = [
   {
     title: 'Matriculated',
-    location: 'Hlaingtharyar, Yangon',
+    location: 'Yangon',
     description:
       "I passed the matriculation examination with 4 distincitions. After that, I couldn't go the college due to the covid pandemic.",
     icon: React.createElement(FaSchool),
@@ -49,7 +49,7 @@ export const experiencesData = [
   },
   {
     title: 'Freelancer',
-    location: 'Houston, TX',
+    location: 'Yangon',
     description:
       "I'm now a full-stack engineer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node.js, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),

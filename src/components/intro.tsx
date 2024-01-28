@@ -29,7 +29,7 @@ const IntroSection = () => {
             width={80}
             height={80}
             className="rounded-full border-4 border-white object-cover"
-            quality={90}
+            priority
           />
           <motion.span
             className="absolute -right-2 bottom-0 z-20 text-3xl"
