@@ -1,13 +1,28 @@
-"use client";
-import React from "react";
-import SectionHeader from "./section-header";
-import { useSectionView } from "@/lib/hooks";
-import { skillsData } from "@/lib/data";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+'use client';
+import React from 'react';
+import SectionHeader from './section-header';
+import { useSectionView } from '@/lib/hooks';
+import { skillsData } from '@/lib/data';
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
+import { motion, type Variants } from 'framer-motion';
+
+const fadeInAnimationVariants: Variants = {
+  initial: {
+    opacity: 0,
+    y: 80,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: index * 0.08,
+    },
+  }),
+};
 
 const MySkills = () => {
-  const { ref } = useSectionView("Skills");
+  const { ref } = useSectionView('Skills', 0.95);
   return (
     <section
       id="skills"
@@ -17,9 +32,16 @@ const MySkills = () => {
       <SectionHeader>My Skills</SectionHeader>
       <ul className="flex flex-wrap items-center justify-center gap-4 text-lg text-gray-700">
         {skillsData.map((skill, index) => (
-          <li
+          <motion.li
             key={skill.text}
-            className="borderBlack flex items-center gap-1 rounded-xl bg-white px-4 py-2 text-gray-700 dark:bg-white/10 dark:text-white/80"
+            className="borderBlack flex max-h-[45.6px] items-center gap-1 rounded-xl bg-white px-4 py-2 text-gray-700 dark:bg-white/10 dark:text-white/80"
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
           >
             <Image
               src={skill.image}
@@ -28,10 +50,10 @@ const MySkills = () => {
               height={60}
               className="h-[24px] w-[24px]"
             />
-            <span className={cn(index < 2 && "mt-1", "text-inherit")}>
+            <span className={cn(index < 2 && 'mt-1', 'text-inherit')}>
               {skill.text}
             </span>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </section>

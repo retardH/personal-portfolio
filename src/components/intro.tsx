@@ -1,30 +1,26 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import { BsArrowRight } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { BsArrowRight } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa6';
 
-import Link from "next/link";
-import { useSectionView } from "@/lib/hooks";
+import Link from 'next/link';
+import { useSectionView } from '@/lib/hooks';
 
 const IntroSection = () => {
-  const { ref } = useSectionView("Home");
+  const { ref } = useSectionView('Home');
   return (
-    <section
-      id="home"
-      ref={ref}
-      className="max-w-[50rem] scroll-mt-[100rem]"
-    >
+    <section id="home" ref={ref} className="max-w-[50rem] scroll-mt-[100rem]">
       <div className="flex flex-col items-center justify-center">
         <motion.figure
           className="relative h-[80px] w-[80px]"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            type: "tween",
-            duration: "0.25",
+            type: 'tween',
+            duration: '0.25',
           }}
         >
           <Image
@@ -40,7 +36,7 @@ const IntroSection = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               stiffness: 125,
               delay: 0.4,
               duration: 0.6,
@@ -54,11 +50,14 @@ const IntroSection = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          <span className="font-bold">Hello, I&apos;m Zarni.</span> I&apos;m a{" "}
-          <b className="font-bold">full-stack developer</b> with{" "}
-          <b className="font-bold">industrial experience.</b> I enjoy building{" "}
-          <span className="italic">sites & apps</span>. My focus is{" "}
-          <span className="underline underline-offset-8">React (Next.js)</span>.
+          <span className="font-bold">Hello, I&apos;m Zarni.</span> I&apos;m a{' '}
+          <b className="font-bold">full-stack developer</b> with{' '}
+          <b className="font-bold">industrial experience.</b> I enjoy building{' '}
+          <span className="italic">sites & apps</span>. My focus is{' '}
+          <span className="underline underline-offset-[10px]">
+            Javascript Language
+          </span>
+          .
         </motion.h1>
         <motion.div
           className="flex flex-col items-center justify-center gap-5 sm:flex-row"
@@ -73,7 +72,7 @@ const IntroSection = () => {
             //   setTimeOfLastClick(Date.now());
             // }}
           >
-            Contact me here{" "}
+            Contact me here{' '}
             <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
           </Link>
 
@@ -82,7 +81,7 @@ const IntroSection = () => {
             href="/CV.pdf"
             download
           >
-            Download CV{" "}
+            Download CV{' '}
             <HiDownload className="opacity-60 transition group-hover:translate-x-1" />
           </a>
 

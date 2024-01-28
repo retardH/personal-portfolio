@@ -1,8 +1,10 @@
-import AboutMyself from "@/components/about";
-import IntroSection from "@/components/intro";
-import MyProjects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import MySkills from "@/components/skills";
+import AboutMyself from '@/components/about';
+import Contact from '@/components/contact';
+import MyHistory from '@/components/history';
+import IntroSection from '@/components/intro';
+import MyProjects from '@/components/projects';
+import SectionDivider from '@/components/section-divider';
+import MySkills from '@/components/skills';
 
 export default function Home() {
   return (
@@ -15,6 +17,9 @@ export default function Home() {
       <SectionDivider />
       <MySkills />
       <SectionDivider />
+      <MyHistory />
+      <SectionDivider />
+      <Contact />
     </div>
   );
 }

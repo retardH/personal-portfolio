@@ -1,14 +1,14 @@
-"use client";
-import { useInView } from "react-intersection-observer";
-import { SectionName } from "./types";
-import { useActiveSectionContext } from "@/contexts/active-section";
-import { useEffect, useState } from "react";
+'use client';
+import { useInView } from 'react-intersection-observer';
+import { SectionName } from './types';
+import { useActiveSectionContext } from '@/contexts/active-section';
+import { useEffect, useState } from 'react';
 
 export const useSectionView = (
   sectionName: SectionName,
   threshold: number = 0.7,
 ) => {
-  const isMobile = useMedia("(max-width: 640px)", false);
+  const isMobile = useMedia('(max-width: 640px)', false);
   const { ref, inView } = useInView({
     threshold: isMobile ? 0.4 : threshold,
   });
@@ -23,6 +23,7 @@ export const useSectionView = (
 
   return {
     ref,
+    inView,
   };
 };
 
@@ -37,9 +38,9 @@ export const useMedia = (query: string, defaultState?: boolean) => {
     }
 
     // A default value has not been provided, and you are rendering on the server, warn of a possible hydration mismatch when defaulting to false.
-    if (process.env.NODE_ENV !== "production") {
+    if (process.env.NODE_ENV !== 'production') {
       console.warn(
-        "`useMedia` When server side rendering, defaultState should be defined to prevent a hydration mismatches.",
+        '`useMedia` When server side rendering, defaultState should be defined to prevent a hydration mismatches.',
       );
     }
 
@@ -55,11 +56,11 @@ export const useMedia = (query: string, defaultState?: boolean) => {
       if (!mounted) return;
       setState(!!mql.matches);
     };
-    mql.addEventListener("change", onChange);
+    mql.addEventListener('change', onChange);
     setState(mql.matches);
     return () => {
       mounted = false;
-      mql.removeEventListener("change", onChange);
+      mql.removeEventListener('change', onChange);
     };
   }, [query]);
 
