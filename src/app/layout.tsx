@@ -8,10 +8,10 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'HtetZarni|Portfolio',
+  title: 'HtetZarni | Portfolio',
   description: 'A modern portfolio website crafted by HtetZarni.',
   openGraph: {
-    title: 'HtetZarni|Portfolio',
+    title: 'HtetZarni | Portfolio',
   },
 };
 

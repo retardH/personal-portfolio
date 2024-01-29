@@ -35,7 +35,7 @@ export const experiencesData = [
     title: 'Matriculated',
     location: 'Yangon',
     description:
-      "I passed the matriculation examination with 4 distincitions. After that, I couldn't go the college due to the covid pandemic.",
+      "I passed the matriculation examination with 4 distincitions. After that I couldn't go the college due to the covid pandemic.",
     icon: React.createElement(FaSchool),
     date: '2019 - 2020',
   },
@@ -51,7 +51,7 @@ export const experiencesData = [
     title: 'Freelancer',
     location: 'Yangon',
     description:
-      "I'm now a full-stack engineer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node.js, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack engineer learning new things and building projects as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node.js, Mysql and MongoDB. I'm open to any full-time opportunities.",
     icon: React.createElement(FaReact),
     date: '2024 - present',
   },
@@ -97,9 +97,9 @@ export const skillsData = [
   { text: 'React', image: '/react.svg' },
   { text: 'Redux', image: '/redux.svg' },
   { text: 'Vue', image: '/vue.svg' },
+  { text: 'Pinia', image: '/pinia.svg' },
   { text: 'Next.js', image: '/nextjs-icon.svg' },
   { text: 'Node.js', image: '/nodejs-icon.svg' },
-  { text: 'Express', image: '/nodejs-icon.svg' },
   { text: 'Prisma', image: '/prisma.svg' },
   { text: 'MongoDB', image: '/mongodb-icon.svg' },
   { text: 'Git', image: '/git-icon.svg' },
