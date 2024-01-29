@@ -8,9 +8,11 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa6';
 
 import Link from 'next/link';
 import { useSectionView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/contexts/active-section';
 
 const IntroSection = () => {
   const { ref } = useSectionView('Home');
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section id="home" ref={ref} className="max-w-[50rem] scroll-mt-[100rem]">
       <div className="flex flex-col items-center justify-center">
@@ -67,10 +69,10 @@ const IntroSection = () => {
           <Link
             href="#contact"
             className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition-all hover:scale-105 hover:bg-gray-950 focus:scale-110 active:scale-105"
-            // onClick={() => {
-            //   setActiveSection("Contact");
-            //   setTimeOfLastClick(Date.now());
-            // }}
+            onClick={() => {
+              setActiveSection('Contact');
+              setTimeOfLastClick(Date.now());
+            }}
           >
             Contact me here{' '}
             <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
@@ -85,21 +87,23 @@ const IntroSection = () => {
             <HiDownload className="opacity-60 transition group-hover:translate-x-1" />
           </a>
 
-          <a
-            className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-3 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-            href="https://linkedin.com"
-            target="_blank"
-          >
-            <FaLinkedinIn size={24} />
-          </a>
+          <div className="flex items-center gap-5">
+            <a
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-3 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+              href="https://linkedin.com"
+              target="_blank"
+            >
+              <FaLinkedinIn size={24} />
+            </a>
 
-          <a
-            className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-3 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-            href="https://github.com/retardH"
-            target="_blank"
-          >
-            <FaGithub size={24} />
-          </a>
+            <a
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-3 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+              href="https://github.com/retardH"
+              target="_blank"
+            >
+              <FaGithub size={24} />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
