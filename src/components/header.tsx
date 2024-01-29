@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="relative z-[999]">
       <motion.div
-        className="borderBlack fixed left-1/2 h-[5rem] w-full -translate-x-1/2 rounded-none border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.3rem] backdrop-blur-md sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+        className="borderBlack fixed left-1/2 h-[5rem] w-full -translate-x-1/2 rounded-none border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.3rem] backdrop-blur-md sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-2xl"
         initial={{ y: -100, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
       ></motion.div>
@@ -40,7 +40,7 @@ const Header = () => {
               </Link>
               {link.name === activeSection && (
                 <motion.span
-                  className="absolute inset-0 -z-10 rounded-full bg-gray-200"
+                  className="absolute inset-0 -z-10 rounded-xl bg-gray-200"
                   layoutId="activeSection"
                   transition={{
                     damping: 30,

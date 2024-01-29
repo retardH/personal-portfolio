@@ -68,7 +68,7 @@ const IntroSection = () => {
         >
           <Link
             href="#contact"
-            className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition-all hover:scale-105 hover:bg-gray-950 focus:scale-110 active:scale-105"
+            className="group flex items-center gap-2 rounded-xl bg-gray-900 px-7 py-3 text-white outline-none transition-all hover:scale-105 hover:bg-gray-950 focus:scale-110 active:scale-105"
             onClick={() => {
               setActiveSection('Contact');
               setTimeOfLastClick(Date.now());
@@ -79,7 +79,7 @@ const IntroSection = () => {
           </Link>
 
           <a
-            className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition-all hover:scale-105 focus:scale-110 active:scale-105 dark:bg-white/10"
+            className="borderBlack group flex cursor-pointer items-center gap-2 rounded-xl bg-white px-7 py-3 outline-none transition-all hover:scale-105 focus:scale-110 active:scale-105 dark:bg-white/10"
             href="/CV.pdf"
             download
           >
@@ -89,7 +89,7 @@ const IntroSection = () => {
 
           <div className="flex items-center gap-5">
             <a
-              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-3 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-2xl bg-white p-3 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
               href="https://linkedin.com"
               target="_blank"
             >
@@ -97,7 +97,7 @@ const IntroSection = () => {
             </a>
 
             <a
-              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-3 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-2xl bg-white p-3 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
               href="https://github.com/retardH"
               target="_blank"
             >
