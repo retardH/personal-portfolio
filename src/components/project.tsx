@@ -1,10 +1,10 @@
-"use client";
-import { ProjectType } from "@/lib/types";
-import Image from "next/image";
-import React, { useRef } from "react";
-import { FiGithub } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
-import { motion, useScroll, useTransform } from "framer-motion";
+'use client';
+import { ProjectType } from '@/lib/types';
+import Image from 'next/image';
+import React, { useRef } from 'react';
+import { FiGithub } from 'react-icons/fi';
+import { CgWebsite } from 'react-icons/cg';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Project: React.FC<ProjectType> = ({
   title,
@@ -17,7 +17,7 @@ const Project: React.FC<ProjectType> = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.25 1"],
+    offset: ['0 1', '1.25 1'],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
@@ -32,16 +32,16 @@ const Project: React.FC<ProjectType> = ({
         opacity: opacityProgress,
       }}
     >
-      <section className="relative max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:pr-8 sm:group-even:pl-8">
-        <div className="flex h-full flex-col justify-center px-5 py-4 sm:max-w-[50%] sm:py-6 sm:pl-10 sm:pr-2 sm:group-even:ml-[18rem]">
+      <section className="relative max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:py-6">
+        <div className="flex h-full flex-col justify-center px-5 py-4 sm:w-[50%] sm:py-6 sm:group-even:ml-auto">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 min-h-[130px] leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="mt-8 flex flex-wrap gap-2">
             {tags.map((tag, index) => (
               <li
-                className="rounded-full bg-black/[0.8] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white dark:text-white/70"
+                className="rounded-lg bg-black/[0.9] px-3 py-1 text-xs uppercase tracking-wider text-white dark:text-white/70"
                 key={index}
               >
                 {tag}
@@ -50,18 +50,18 @@ const Project: React.FC<ProjectType> = ({
           </ul>
           <div className="mt-4 flex items-center gap-2">
             <a
-              className="borderBlack flex max-w-max cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm outline-none transition-all hover:bg-white/50 dark:bg-white/10"
+              className="borderBlack flex max-w-max cursor-pointer items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm outline-none transition-all hover:bg-white/50 dark:bg-white/10"
               href={repoLink}
               target="_blank"
             >
-              Source Code <FiGithub className="transition" />
+              <span>Source Code</span> <FiGithub className="transition" />
             </a>
             <a
-              className="borderBlack flex max-w-max cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm outline-none transition-all hover:bg-white/50 dark:bg-white/10"
+              className="borderBlack flex max-w-max cursor-pointer items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm outline-none transition-all hover:bg-white/50 dark:bg-white/10"
               href={siteLink}
               target="_blank"
             >
-              Demo <CgWebsite className="transition" />
+              <span>Demo</span> <CgWebsite className="transition" />
             </a>
           </div>
         </div>

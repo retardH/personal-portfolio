@@ -59,31 +59,31 @@ export const experiencesData = [
 
 export const projectsData: ProjectType[] = [
   {
-    title: 'CorpComment',
+    title: 'Comfy Home',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: '/demo.png',
+      'A furnitures ecommerce web app for home and office uses. It has features like sorting, filtering products and making actual payments.',
+    tags: ['React', 'Typescript', 'Tailwind', 'Stripe'],
+    imageUrl: '/comfy-home.png',
     repoLink: 'https://github.com/retardH/comfy-ecommerce',
-    siteLink: 'https://comfy-home.netlify.app',
+    siteLink: 'https://ch-ecommerce.netlify.app',
   },
   {
-    title: 'rmtDev',
+    title: 'Jobster',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: '/demo.png',
-    repoLink: 'https://github.com/retardH/comfy-ecommerce',
-    siteLink: 'https://comfy-home.netlify.app',
+      'A dashboard web app for managing job posts. User can create, update, delete job posts and view chart reports.',
+    tags: ['React', 'TypeScript', 'Tailwind', 'Redux'],
+    imageUrl: '/jobster.png',
+    repoLink: 'https://github.com/retardH/jobster-ts',
+    siteLink: 'https://jobster20.vercel.app ',
   },
   {
-    title: 'Word Analytics',
+    title: 'Shloot Shloot',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: '/demo.png',
-    repoLink: 'https://github.com/retardH/comfy-ecommerce',
-    siteLink: 'https://comfy-home.netlify.app',
+      "A public web app for searching various meals and receipts by text or by country. Users can also mark their fav meals' receipts.",
+    tags: ['Vue', 'Tailwind', 'Pinia'],
+    imageUrl: '/shloot-shloot.png',
+    repoLink: 'https://github.com/retardH/vue-meal-receipts',
+    siteLink: 'https://shloot-shloot.vercel.app',
   },
 ];
 
