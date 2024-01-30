@@ -90,12 +90,11 @@ const IntroSection = () => {
           <div className="flex items-center gap-5">
             <a
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-2xl bg-white p-3 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/htet-zrni-916651249/"
               target="_blank"
             >
               <FaLinkedinIn size={24} />
             </a>
-
             <a
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-2xl bg-white p-3 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
               href="https://github.com/retardH"

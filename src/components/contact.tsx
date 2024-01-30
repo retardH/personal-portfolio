@@ -18,11 +18,18 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<ContactForm>();
 
   const action: () => void = handleSubmit(async (data) => {
-    await sendEmail(data);
-    console.log('sent action to the server!');
+    const { data: response, error } = await sendEmail(data);
+
+    if (data) {
+      console.log('email sent successfully!', response);
+    } else if (error) {
+      console.log('error: ', error);
+    }
+    reset();
   });
 
   return (
