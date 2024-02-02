@@ -6,6 +6,7 @@ import { useSectionView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/lib/actions';
+import toast from 'react-hot-toast';
 
 type ContactForm = {
   senderEmail: string;
@@ -18,11 +19,20 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<ContactForm>();
 
   const action: () => void = handleSubmit(async (data) => {
-    await sendEmail(data);
-    console.log('sent action to the server!');
+    const { data: response, error } = await sendEmail(data);
+
+    if (data) {
+      // console.log('email sent successfully!', response);
+      toast.success('Email sent successfully!');
+    } else if (error) {
+      // console.log('error: ', error);
+      toast.error(error);
+    }
+    reset();
   });
 
   return (

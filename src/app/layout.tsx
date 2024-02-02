@@ -10,8 +10,11 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'HtetZarni | Portfolio',
   description: 'A modern portfolio website crafted by HtetZarni.',
+  generator: 'Next.js',
+  keywords: ['react', 'nextjs', 'tailwind', 'portfolio', 'htetzarni'],
   openGraph: {
     title: 'HtetZarni | Portfolio',
+    description: 'A modern portfolio website crafted by HtetZarni.',
   },
 };
 
