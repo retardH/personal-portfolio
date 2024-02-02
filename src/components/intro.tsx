@@ -53,7 +53,7 @@ const IntroSection = () => {
           animate={{ y: 0, opacity: 1 }}
         >
           <span className="font-bold">Hello, I&apos;m Zarni.</span> I&apos;m a{' '}
-          <b className="font-bold">full-stack developer</b> with{' '}
+          <b className="font-bold">software engineer</b> with{' '}
           <b className="font-bold">industrial experience.</b> I enjoy building{' '}
           <span className="italic">sites & apps</span>. My focus is{' '}
           <span className="underline underline-offset-[10px]">
@@ -80,10 +80,10 @@ const IntroSection = () => {
 
           <a
             className="borderBlack group flex cursor-pointer items-center gap-2 rounded-xl bg-white px-7 py-3 outline-none transition-all hover:scale-105 focus:scale-110 active:scale-105 dark:bg-white/10"
-            href="/CV.pdf"
-            download
+            href="https://drive.google.com/file/d/18G_hBxTJ7C_-JD8WTE8RGj1x_OGqI-1D/view"
+            target="_blank"
           >
-            Download CV{' '}
+            Get My CV{' '}
             <HiDownload className="opacity-60 transition group-hover:translate-x-1" />
           </a>
 

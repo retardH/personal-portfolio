@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
@@ -16,7 +16,7 @@ const Header = () => {
         initial={{ y: -100, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
       ></motion.div>
-      <nav className=" fixed left-1/2 top-0 flex h-[5rem] -translate-x-1/2 items-center justify-between py-2 sm:top-6 sm:h-[3.25rem] sm:py-0">
+      <nav className="fixed left-1/2 top-0 flex h-[5rem] -translate-x-1/2 items-center justify-between py-2 sm:top-6 sm:h-[3.25rem] sm:py-0">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-base text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-4">
           {links.map((link) => (
             <motion.li

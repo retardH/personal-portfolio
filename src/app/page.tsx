@@ -5,6 +5,7 @@ import IntroSection from '@/components/intro';
 import MyProjects from '@/components/projects';
 import SectionDivider from '@/components/section-divider';
 import MySkills from '@/components/skills';
+import { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <MyHistory />
       <SectionDivider />
       <Contact />
+      <Toaster />
     </div>
   );
 }

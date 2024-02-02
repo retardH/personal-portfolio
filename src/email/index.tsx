@@ -1,5 +1,4 @@
 import {
-  Button,
   Html,
   Head,
   Body,
@@ -22,7 +21,7 @@ const Email: React.FC<Props> = ({ senderEmail, message }) => {
   return (
     <Html>
       <Head />
-      <Preview>TNew message from your portfolio site.</Preview>
+      <Preview>New message from your portfolio site.</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
