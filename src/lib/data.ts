@@ -68,6 +68,15 @@ export const projectsData: ProjectType[] = [
     siteLink: 'https://ch-ecommerce.netlify.app',
   },
   {
+    title: 'MUVI',
+    description:
+      'A public web app for searching various movies and tv shows. All datas are fetched from the TMDB api. It has features like debounce searching, filtering the results.',
+    tags: ['React', 'Typescript', 'ShadcnUi', 'Tailwind', 'Clerk'],
+    imageUrl: '/muvi.png',
+    repoLink: 'https://github.com/retardH/tmdb-project',
+    siteLink: 'https://tmuvi.vercel.app',
+  },
+  {
     title: 'Jobster',
     description:
       'A dashboard web app for managing job posts. User can create, update, delete job posts and view chart reports.',
