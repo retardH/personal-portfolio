@@ -80,7 +80,7 @@ const IntroSection = () => {
 
           <a
             className="borderBlack group flex cursor-pointer items-center gap-2 rounded-xl bg-white px-7 py-3 outline-none transition-all hover:scale-105 focus:scale-110 active:scale-105 dark:bg-white/10"
-            href="https://drive.google.com/file/d/18G_hBxTJ7C_-JD8WTE8RGj1x_OGqI-1D/view"
+            href="https://flowcv.com/resume/vlomrm0v56"
             target="_blank"
           >
             Get My CV{' '}
