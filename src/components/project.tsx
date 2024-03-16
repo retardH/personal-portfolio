@@ -41,7 +41,7 @@ const Project: React.FC<ProjectType> = ({
           <ul className="mt-8 flex flex-wrap gap-2">
             {tags.map((tag, index) => (
               <li
-                className="rounded-lg bg-black/[0.9] px-3 py-1 text-xs uppercase tracking-wider text-white dark:text-white/70"
+                className="rounded-lg bg-black/[0.9] px-3 py-1 text-xs capitalize tracking-wider text-white dark:text-white/70"
                 key={index}
               >
                 {tag}
