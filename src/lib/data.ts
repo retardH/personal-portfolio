@@ -71,7 +71,7 @@ export const projectsData: ProjectType[] = [
     title: 'MUVI',
     description:
       'A public web app for searching various movies and tv shows. All datas are fetched from the TMDB api. It has features like debounce searching, filtering the results.',
-    tags: ['React', 'Typescript', 'ShadcnUi', 'Tailwind', 'Clerk'],
+    tags: ['React', 'Typescript', 'Tailwind', 'Clerk'],
     imageUrl: '/muvi.png',
     repoLink: 'https://github.com/retardH/tmdb-project',
     siteLink: 'https://tmuvi.vercel.app',
