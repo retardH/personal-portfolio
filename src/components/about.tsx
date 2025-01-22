@@ -16,7 +16,22 @@ const AboutMyself = () => {
       ref={ref}
     >
       <SectionHeader>About Myself</SectionHeader>
-      <p className="mb-3 text-justify text-base !leading-7 sm:!leading-8">
+      <p>
+        I am a software engineer with a deep passion for building innovative,
+        accessible and pixel-perfect web applications. I love open-source
+        software and have a dream to develop various open-source softwares that
+        is useful for the development world. My primary expertise lies in
+        Javascript/Typescript ecosystem. But I also have some experience in
+        backend development with C#(.NET Core). Currently, I&apos;m a full-stack
+        software engineer at KBZ Bank where I develop cutting-edge solutions for
+        the human resource sector in the bank. I specialize in working on the
+        frontend side mostly using React and Typescript. I thrive on tackling
+        challenging tasks, whether it&apos;s optimizing performance, ensuring
+        scalability, or improving user interfaces. Outside of work, I am
+        constantly exploring new technologies and trends in the tech industry,
+        which helps me stay ahead in this fast-evolving field.
+      </p>
+      {/* <p className="mb-3 text-justify text-base !leading-7 sm:!leading-8">
         After passing the matriculation examination with four distinctions, I
         could not go the the college due to the covid pandemic and political
         situation in my country, Myanmar. So, I decided to pursue my passion for
@@ -41,7 +56,7 @@ const AboutMyself = () => {
         and thrive in dynamic environments where innovation and excellence are
         paramount. I am currently looking for a{' '}
         <b className="font-semibold">full-time position</b> as a web developer.
-      </p>
+      </p> */}
     </motion.section>
   );
 };

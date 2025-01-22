@@ -1,6 +1,6 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact, FaSchool } from 'react-icons/fa6';
+import { FaSchool } from 'react-icons/fa6';
 import { ProjectType } from './types';
 
 export const links = [
@@ -40,7 +40,7 @@ export const experiencesData = [
     date: '2019 - 2020',
   },
   {
-    title: 'Junior Front-End Engineer',
+    title: 'Front-End Software Engineer',
     location: 'Yangon',
     description:
       'I worked as a front-end engineer for almost 1 year at a software house. I mainly develop robust and user interactive web apps collaborating with design team and backend engineers.',
@@ -48,11 +48,13 @@ export const experiencesData = [
     date: '2022 - 2023',
   },
   {
-    title: 'Freelancer',
+    title: 'Full-stack Software Engineer',
     location: 'Yangon',
+    // description:
+    //   "I'm now a full-stack engineer learning new things and building projects as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node.js, Mysql and MongoDB. I'm open to any full-time opportunities.",
     description:
-      "I'm now a full-stack engineer learning new things and building projects as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node.js, Mysql and MongoDB. I'm open to any full-time opportunities.",
-    icon: React.createElement(FaReact),
+      'Currently working as a full-stack software engineer at KBZ Bank. I mainly develop and lead the frontend side written with React and Typescript. But Sometimes, I have to write a little bit of C# too.',
+    icon: React.createElement(CgWorkAlt),
     date: '2024 - present',
   },
 ] as const;
@@ -84,6 +86,15 @@ export const projectsData: ProjectType[] = [
     imageUrl: '/jobster.png',
     repoLink: 'https://github.com/retardH/jobster-ts',
     siteLink: 'https://jobster20.vercel.app ',
+  },
+  {
+    title: 'MOOZ',
+    description:
+      'A web app for making collaborative team meeting. Users can create, scheule and record meetings. A personal room for each user is also automatically created.',
+    tags: ['React', 'Next.js', 'Typescript', 'Tailwind'],
+    imageUrl: '/mooz.png',
+    repoLink: 'https://github.com/retardH/not-zoom',
+    siteLink: 'https://mooz-three.vercel.app/',
   },
   {
     title: 'Shloot Shloot',
